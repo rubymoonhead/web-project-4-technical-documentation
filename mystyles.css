@@ -1,0 +1,202 @@
+/* MY TEMPLATE */
+* {
+	/* Outline to view layout on screen while styling | Remove after styling */
+	/* outline: 0.05em dashed #ff0075; */
+	margin: 0;
+	padding: 0;
+	scroll-behavior: smooth;
+}
+html {
+	box-sizing: border-box;
+	font-size: 100%;
+}
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+/* DECLARING variables for colors */
+:root {
+	--darkblue: #12232e; /* border, color */
+	--shadowofdarkblue: #203647; /* background-color, font */
+	--lightestblue: #4da8da; /* background-color */
+	--shadowoflightblue: #eefbfb; /* color, background-color */
+	--lightgray: #d3d3d3; /* background-color */
+}
+
+/* DESKTOP */
+
+/* BASE styles */
+body {
+	min-width: 20em;
+	font-family: "Roboto", sans-serif;
+	color: var(--darkblue);
+	background-color: var(--shadowoflightblue);
+	line-height: 1.5;
+}
+h3,
+h4 {
+	padding: 0.75em 0;
+}
+h5 {
+	font-family: "Roboto Slab", serif;
+}
+header {
+	font-family: "Roboto Slab", serif;
+	color: var(--shadowofdarkblue);
+	margin: 0.5em;
+	text-align: center;
+	font-size: 1.75rem;
+}
+code {
+	background-color: var(--lightgray);
+	color: var(--shadowofdarkblue);
+	font-size: 1rem;
+	padding: 0.25em;
+	border-radius: 0.25em;
+}
+
+/* NAVIGATION */
+#navbar {
+	min-width: 20em;
+	position: fixed;
+	width: 18.75em;
+	height: 100%;
+	top: 0;
+	left: 0;
+	border-right: 0.05em dotted var(--darkblue);
+}
+#navbar ul {
+	padding: 0;
+	height: 85%;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+#navbar ul li {
+	position: relative;
+	width: 100%;
+	border-top: 0.05em dotted var(--darkblue);
+	list-style: none;
+}
+#navbar ul li a {
+	display: block;
+	padding: .5em 2em;
+	text-decoration: none;
+	color: var(--lightestblue);
+	cursor: pointer;
+}
+#navbar ul li .nav-link:hover {
+	color: var(--shadowoflightblue);
+	background-color: var(--shadowofdarkblue);
+}
+
+/* MAIN TECHNICAL PAGE */
+
+/* IMAGES */
+#main-doc .main-section .image {
+	width: 100%;
+	height: auto;
+}
+#main-doc .main-section .image .hugo-logo,
+#main-doc .main-section .image .skills {
+	display: block;
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#main-doc .main-section .image .svg,
+#main-doc .main-section .image .gopher {
+	display: block;
+	width: 25%;
+	margin-left: auto;
+	margin-right: auto;
+}
+/* MAIN */
+#main-doc header {
+	text-align: left;
+}
+#main-doc {
+	position: absolute;
+	padding: 1.5em;
+	margin-left: 19.25em;
+	margin-bottom: 5em;
+}
+#main-doc .main-section article {
+	padding: 1em;
+}
+#main-doc .main-section article p a,
+#main-doc .main-section article ol li ul li a,
+#main-doc .main-section article ul li a {
+	text-decoration: none;
+	color: #ff00e4;
+	font-family: "Roboto Slab", serif;
+}
+#main-doc .main-section article ol li,
+#main-doc .main-section article ul {
+	list-style: none;
+}
+
+/* FOOTER */
+footer {
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-between;
+	padding: 1em;
+	margin: 3em 0 1em 0;
+}
+.credits-flex {
+	display: flex;
+	justify-content: center;
+}
+.credits-flex .them {
+	text-align: left;
+	padding-left: 0.5em;
+}
+footer .credits-flex .them p a {
+	text-decoration: none;
+	color: #ff00e4;
+	font-family: "Roboto Slab", serif;
+}
+
+/* TABLETS and MOBILE */
+@media screen and (max-width: 768px) {
+	/* NAVIGATION */
+	#navbar {
+		position: absolute;
+		z-index: 1;
+		width: 100%;
+		max-height: 17.25em;
+		top: 0;
+		margin: 0;
+		padding: 0;
+		border: none;
+		border-bottom: 0.05em dotted var(--darkblue);
+		background-color: var(--shadowofdarkblue);
+	}
+	#navbar header {
+		color: var(--shadowoflightblue);
+	}
+	#navbar ul {
+		border: 0.05em dotted var(--darkblue);
+		height: 12.9375em;
+	}
+	/* MAIN */
+	#main-doc {
+		position: relative;
+		padding: 1em;
+		margin-left: 0;
+		margin-top: 16.875em;
+		margin-bottom: 0;
+	}
+	/* FOOTER */
+	footer {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 3em;
+		padding: 1em;
+		margin: 1em 0 1em 0;
+	}
+}

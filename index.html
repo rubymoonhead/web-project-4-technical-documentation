@@ -1,0 +1,558 @@
+<!-- technical documentation -->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Hugo</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="mystyles.css" />
+	</head>
+
+	<body>
+		<!-- NAVIGATION -->
+		<nav id="navbar">
+			<header>Hugo</header>
+			<ul>
+				<li><a class="nav-link" href="#What_is_Hugo?">What is Hugo?</a></li>
+				<li>
+					<a class="nav-link" href="#Skills_for_Implementing_Hugo"
+						>Skills for Implementing Hugo</a
+					>
+				</li>
+				<li>
+					<a class="nav-link" href="#How_to_Implement_Hugo"
+						>How to Implement Hugo</a
+					>
+				</li>
+				<li><a class="nav-link" href="#What's_Next?">What's Next?</a></li>
+				<li><a class="nav-link" href="#Pros_and_Cons">Pros and Cons</a></li>
+				<li><a class="nav-link" href="#Resources">Resources</a></li>
+			</ul>
+		</nav>
+		<!-- MAIN TECHNICAL PAGE -->
+		<main id="main-doc">
+			<section class="main-section" id="What_is_Hugo?">
+				<header>What is Hugo?</header>
+				<div class="image">
+					<img
+						class="hugo-logo"
+						src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Logo_of_Hugo_the_static_website_generator.svg/1024px-Logo_of_Hugo_the_static_website_generator.svg.png"
+						alt="Hugo logo"
+					/>
+				</div>
+				<article>
+					<p>
+						<a href="https://gohugo.io/" target="blank">Hugo</a> is a
+						popular open-source static site generator written in the Go
+						programming language.
+					</p>
+					<h3>What is a static site generator?</h3>
+					<p>
+						Per
+						<a
+							href="https://www.techradar.com/best/static-site-generators"
+							target="_blank"
+							>techradar</a
+						>, a static site generator like Hugo takes all the source
+						files and creates a static website out of the source files.
+					</p>
+					<p>
+						A static site generator is a system that lets a website
+						creator use certain code sections repeatedly and easily.
+					</p>
+					<h3>What is Go?</h3>
+					<p>
+						According to
+						<a href="https://golang.org/" target="blank">Golang.org</a>,
+						"Go is an open source programming language that makes it easy
+						to build simple, reliable, and efficient software."
+					</p>
+					<p>
+						<a
+							href="https://en.wikipedia.org/wiki/Go_(programming_language)"
+							target="blank"
+							>Wikipedia</a
+						>
+						says that "Go is a statically typed, compiled programming
+						language designed at Google in 2007 by Robert Griesemer, Rob
+						Pike, and Ken Thompson.
+					</p>
+					<p>
+						Additionally, "Go is widely used in production at Google and
+						in many other organizations and open-source projects."
+					</p>
+					<p>
+						Hugo's main selling point is that it's fast. It takes seconds
+						to generate a site with lots of pages. Site generation speed
+						prompted <em>Smashing Magazine</em>, a website that provides
+						content and resources for web developers and web designers, to
+						switch to Hugo from Wordpress.
+					</p>
+					<p>
+						Hugo has great
+						<a
+							href="https://www.markdownguide.org/tools/hugo/"
+							target="blank"
+							>Markdown support</a
+						>.
+					</p>
+					<p>
+						The Hugo site includes a table of
+						<a
+							href="https://gohugo.io/content-management/formats/"
+							target="blank"
+							>content formats</a
+						>. In the table you'll notice that HTML and Markdown are
+						supported.
+					</p>
+					<h3>What is Markdown?</h3>
+					<p>
+						<a
+							href="https://en.wikipedia.org/wiki/Markdown"
+							target="blank"
+							>Markdown</a
+						>
+						is lightweight markup language. You can create formatted text
+						using a plain-text editor.
+					</p>
+					<p>
+						"John Gruber and Aaron Swartz created Markdown in 2004 as a
+						markup language that is appealing to human readers in its
+						source code form.
+					</p>
+					<p>
+						Markdown is widely used in blogging, instant messaging, online
+						forums, collaborative software, documentation pages, and
+						readme files." Markdown is readable as-is without looking like
+						Rich Text Format (RTF) or HTML.
+					</p>
+					<p>
+						We skimmed through the Markdown tutorials provided in the Hugo
+						site. It appears it's easy to learn Markdown syntax in a
+						single sitting. According to
+						<a
+							href="https://www.markdownguide.org/getting-started/"
+							target="blank"
+							>Markdown Guide</a
+						>
+						"It doesn’t take long to learn the Markdown syntax, and once
+						you know how to use it, you can write using Markdown just
+						about everywhere."
+					</p>
+					<p>
+						Other Hugo features are that it can support dynamic API-driven
+						content without plugins, has hundreds of pre-made templates,
+						provides full support for multi-language sites, "allows you to
+						output your content in multiple formats, including JSON or
+						AMP, and makes it easy to create your own."
+					</p>
+				</article>
+			</section>
+			<section class="main-section" id="Skills_for_Implementing_Hugo">
+				<header>Skills for Implementing Hugo</header>
+				<div class="image">
+					<img
+						class="skills"
+						src="https://miro.medium.com/max/960/1*h-FuIYtxJxoQzDrE_E3QRw.gif"
+						alt="skills gif"
+					/>
+				</div>
+				<article>
+					<p>
+						Hugo might have a steep learning curve for people who have
+						never coded and beginner web developers.
+					</p>
+					<p>
+						It would be best if you have basic knowledge of HTML, CSS, CLI
+						(command line input) to install Hugo to your Windows, Linux,
+						or Mac computer, know how and be willing to write your content
+						with Markdown, and know how to use Git for content version
+						control and to deploy your site.
+					</p>
+				</article>
+			</section>
+			<section class="main-section" id="How_to_Implement_Hugo">
+				<header>How to Implement Hugo</header>
+				<article>
+					<p>
+						If you plan to create your blog using Hugo, you must install
+						Hugo on your computer. You can also install Hugo on Windows,
+						macOS, and Linux.
+					</p>
+					<p>
+						We'll focus on installing Hugo on Windows 10 in this
+						documentation.
+					</p>
+					<p>
+						After install, you must create a Hugo PATH, verify the
+						executable, then create the Hugo site.
+					</p>
+					<ol>
+						<li>
+							<h4>Folder Setup</h4>
+							<p>
+								The starting point for your new project will be
+								<code>C:\Hugo\Sites</code>.
+							</p>
+							<p>
+								<code>C:\Hugo\bin</code> will store executable files.
+							</p>
+							<ul>
+								<li>
+									In Windows Explorer create a new folder:
+									<code>C:\Hugo</code>. You can set up Hugo anywhere in
+									your computer. For now we'll stay with
+									<code>C:\</code>.
+								</li>
+
+								<li>
+									Create a <code>bin</code> subfolder in the Hugo
+									folder: <code>C:\Hugo\bin</code>.
+								</li>
+								<li>
+									Create a <code>Sites</code> subfolder in Hugo:
+									<code>C:\Hugo\Sites</code>.
+								</li>
+							</ul>
+						</li>
+						<li>
+							<h4>Download and Extract Hugo</h4>
+							<ul>
+								<li>
+									Go to the
+									<a
+										href="https://github.com/gohugoio/hugo/releases"
+										target="blank"
+										>Hugo Releases</a
+									>
+									page.
+								</li>
+								<li>
+									Click on the latest release. The release has a
+									"latest" button. Go down the list and choose the
+									applicable Windows zip file to download.
+								</li>
+								<li>
+									We're downloading the
+									<code>hugo-0.89.4_Windows-64bit-zip</code>.
+								</li>
+								<li>
+									Download the zip file into your
+									<code>C:\Hugo\bin folder</code>.
+								</li>
+								<li>
+									Extract the zip file into the same
+									<code>C:\Hugo\bin folder</code>. You should see three
+									new files: The Hugo executable
+									(<code>hugo.exe</code>), <code>LICENSE</code>, and
+									<code>README.md</code>.
+								</li>
+							</ul>
+						</li>
+						<li>
+							<h4>Create a Hugo PATH</h4>
+							<p>You must add Hugo to your Windows PATH settings.</p>
+							<ul>
+								<li>Right click on the <em>Start</em> button.</li>
+								<li>Click on <em>System</em>.</li>
+								<li>
+									Click on <em>Advanced System Settings</em> on the
+									right.
+								</li>
+								<li>
+									Click on the <em>Environment Variables…</em> button
+									on the bottom.
+								</li>
+								<li>
+									In the User variables section, find the row that
+									starts with PATH (all caps).
+								</li>
+								<li>Double-click on <em>PATH</em>.</li>
+								<li>Click the <em>New…</em> button.</li>
+								<li>
+									Type in the folder where
+									<code>hugo.exe</code>
+									was extracted, which is
+									<code>C:\Hugo\bin</code>. The PATH entry should be
+									the folder where Hugo lives and not the binary.
+								</li>
+								<li>Press Enter when you’re done typing.</li>
+								<li>Click OK at every window to exit.</li>
+							</ul>
+						</li>
+						<li>
+							<h4>Verify Hugo executable</h4>
+							<ul>
+								<li>Open a Command Prompt.</li>
+								<li>
+									Type <code>hugo help</code> and press the Enter key.
+								</li>
+								<li>
+									You should see output that starts with:<br />
+									<code
+										>Hugo is the main command, used to build your Hugo
+										site.<br />
+										Hugo is a Fast and Flexible Static Site Generator
+										built with love by spf13 and friends in Go.</code
+									><br />
+								</li>
+								<li>
+									If you see something similar to the above output,
+									then the installation is complete.
+								</li>
+								<li>
+									If you don’t, double-check the path that you placed
+									the
+									<code>hugo.exe</code> file in and that you typed that
+									path correctly when you added it to your PATH
+									variable.<br />
+									If you're still not seeing the output find solutions
+									in the
+									<a href="https://discourse.gohugo.io/" target="blank"
+										>Hugo discussion forum</a
+									>
+									or go to the support category of the discussion forum
+									and request help.
+								</li>
+								<li>
+									At the prompt, change your directory to the Sites
+									directory:
+									<br />
+									<code>C:\Program Files> cd C:\Hugo\Sites</code><br />
+									<code>C:\Hugo\Sites></code>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<h4>Create a Hugo site</h4>
+							<ul>
+								<li>
+									Run the command to generate a new site. For example,
+									using
+									<code>namedsite.com</code> as the name of the
+									site:<br />
+									<code
+										>C:\Hugo\Sites> hugo new site namedsite.com.</code
+									><br />
+									You should now have a directory at
+									<code>C:\Hugo\Sites\namedsite.com</code>. Change into
+									that directory and list its contents.
+								</li>
+							</ul>
+						</li>
+					</ol>
+					<p>
+						Go to
+						<a
+							href="https://gohugo.io/getting-started/installing/"
+							target="blank"
+							>Install Hugo</a
+						>
+						for the comprehensive guide.
+					</p>
+				</article>
+			</section>
+			<section class="main-section" id="What's_Next?">
+				<header>What's Next?</header>
+				<article>
+					<p>
+						You can choose from a variety of
+						<a href="https://themes.gohugo.io/" target="blank"
+							>Hugo themes</a
+						>
+						and apply the theme to your site.
+					</p>
+					<p>
+						Download the current version of the theme and unpack the zip
+						file in your <code>themes/chosentheme</code> namedsite.com
+						folder.
+					</p>
+					<p>
+						Find the <code>config.toml</code> file, a configuration file
+						that lets you set different options for the site, in your
+						<code>namedsite.com</code> folder. Open the file with Notepad.
+						Add <code>theme = "chosentheme"</code> below your blog's
+						title. You can further customize your
+						<code>config.toml</code> file later.
+					</p>
+					<p>
+						From the command line run <code>hugo serve</code>. Open
+						http://localhost:1313 in your browser, and you should see your
+						live site.
+					</p>
+					<p>
+						You'll see your site's home page. There will be a list of
+						posts. Choose “Creating a New Theme”. Open the file
+						<code>content/post/creating-a-new-theme.md</code> to revise
+						the post. Once you save said file, your website will
+						automatically update with revisions you've made. Create a new
+						post by creating a new Markdown(file extension .md) file with
+						a file name you prefer. Now you can focus on creating your
+						content. Start writing your content.
+					</p>
+					<p>
+						If you want, you can deploy your site for free using Netlify
+						or Now or GitHub Pages. Be sure to get your own domain name
+						though.
+					</p>
+				</article>
+			</section>
+			<section class="main-section" id="Pros_and_Cons">
+				<header>Pros and Cons</header>
+				<div class="image">
+					<img
+						class="svg"
+						src="https://pixy.org/src/58/583060.jpg"
+						alt="pros and cons buttons"
+					/>
+				</div>
+				<article>
+					<h3>Pros</h3>
+					<p>
+						Hugo is easy to learn and set up, and has great documentation.
+					</p>
+					<p>Hugo has a growing active open-source community.</p>
+					<p>
+						Hugo is lighter than Wordpress and Hugo is great for content
+						managers/web developers who prefer simplicity over a barrage
+						of extensions and plugins they feel they don't need.
+					</p>
+					<p>
+						Since Hugo is a static site generator and the static site
+						generator runs on your personal computer, your site is not
+						accessible to anyone but you. Your website loads faster, and
+						there is no database behind your site that might slow down
+						load times when a user is on your site.
+					</p>
+					<p>
+						With Hugo, your HTML files are rendered on your computer. You
+						get to review your files locally before they're hosted in the
+						HTTP server. Your HTML files aren’t generated dynamically.
+						Site performance is faster. HTTP servers excel at sending
+						files and serve a number of pages with a fraction of memory
+						and CPU resource required for dynamic sites.
+					</p>
+					<p>
+						Faster websites can rank better on search engines, so Hugo
+						benefits.
+					</p>
+					<p>
+						With a static website, you don't need provider-hosted servers.
+						You can use web developer platforms like Netlify, Now, or
+						GitHub pages to host your Hugo site.
+					</p>
+					<h3>Cons</h3>
+					<p>
+						Hugo is not like a Wordpress site where you can edit content
+						in a WYSIWYG admin window.
+					</p>
+					<p>
+						Hugo's learning curve might be steep for some since you must
+						understand the basics of Markdown, some coding, and Git.
+					</p>
+				</article>
+			</section>
+			<section class="main-section" id="Resources">
+				<header>Resources</header>
+				<div class="image">
+					<img
+						class="gopher"
+						src="https://repository-images.githubusercontent.com/11180687/9d3d8200-abf2-11e9-803c-4cdfde0d22e5"
+						alt="GoHugo.io logo"
+					/>
+				</div>
+				<article>
+					<ul>
+						<li>
+							<a
+								href="https://martijnvanvreeden.nl/why-i-moved-my-personal-blog-from-wordpress-to-hugo/"
+								target="_blank"
+								>Martijn van Vreeden</a
+							>
+							explains why he moved his blog from Wordpress to Hugo.
+						</li>
+						<li>
+							<a
+								href="https://theibbster.medium.com/how-to-build-a-blog-a-complete-beginners-guide-to-hugo-9f831b50aad"
+								target="_blank"
+								>Ibby EL-Serafy</a
+							>
+							guides you through how to build a blog with Hugo on
+							Windows, Linux, and Mac systems.
+						</li>
+						<li>
+							<a
+								href="https://www.smashingmagazine.com/2020/04/free-developer-blog-hugo-firebase/"
+								target="_blank"
+								>Zara Cooper</a
+							>
+							teaches you how to easily deploy a blog for free using Hugo
+							and Firebase.
+						</li>
+						<li>
+							<a
+								href="https://levelup.gitconnected.com/build-a-personal-website-with-github-pages-and-hugo-6c68592204c7"
+								target="_blank"
+								>Yuanyuan Ge</a
+							>
+							shows you how to host a personal webpage with Github Pages.
+						</li>
+					</ul>
+				</article>
+			</section>
+			<!-- FOOTER -->
+			<footer>
+				<div class="credits-flex">
+					<h5>Credits:</h5>
+					<div class="them">
+						<p>
+							Hugo logo from
+							<a href="https://www.wikimedia.org/" target="_blank"
+								>Wikimedia</a
+							>.
+						</p>
+						<p>
+							GIF image from
+							<a href="https://www.janszenmedia.com/" target="_blank"
+								>Janszen Media</a
+							>.
+						</p>
+						<p>
+							pros/cons buttons image from
+							<a href="https://pixy.org/" target="_blank">Pixy.org</a
+							>.<br />
+						</p>
+						<p>
+							GoHugo.io logo from
+							<a href="https://github.com/" target="_blank">GitHub</a>.
+						</p>
+						<p>
+							Huge thanks to
+							<a href="https://gohugo.io/" target="_blank">Hugo</a> and
+							<a
+								href="https://www.markdownguide.org/getting-started/"
+								target="_blank"
+								>Markdown</a
+							>
+							for great documentation.
+						</p>
+					</div>
+				</div>
+				<p>Raya Bergin LBCC Fall2021 COSW20 &copy; 17|21Nov2021</p>
+			</footer>
+		</main>
+		<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+	</body>
+</html>
